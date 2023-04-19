@@ -2,8 +2,7 @@ public class MyArrayList<T> implements MyList{
     private T[] arr;
     private int size;
     public MyArrayList() {
-        this.arr = (T[]) new Object
-                sdadds[5];
+        this.arr = (T[]) new Object[5];
         this.size = 5;
     }
     @Override
