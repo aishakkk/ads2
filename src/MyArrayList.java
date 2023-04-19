@@ -32,7 +32,7 @@ public class MyArrayList<T> implements MyList{
     public void add(Object item, int index) {
         checkIndex(index);
         if (size == arr.length){
-            E[] newArr = (E[]) new Object[arr.length*2];
+            T[] newArr = (T[]) new Object[arr.length*2];
             for(int i=0; i<size; i++){
                 newArr[i]=arr[i];
             }
@@ -41,7 +41,7 @@ public class MyArrayList<T> implements MyList{
         for (int i = size - 1; i>=index; i--){
             arr[i + 1]=arr[i];
         }
-        arr[index]=(E)item;
+        arr[index]=(T)item;
         size++;
     }
 
